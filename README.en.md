@@ -25,8 +25,6 @@
 [Structure](#structure-en) · [Performance & verification](#perf-en) · [Notes](#notes-en) ·
 [Changelog](#changelog-en) · [中文](README.md)
 
-> Math is typeset with LaTeX and rendered by GitHub's native MathJax.
-
 ---
 
 <a id="features-en"></a>
