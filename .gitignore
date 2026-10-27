@@ -1,0 +1,26 @@
+# 运行缓存 / 调试输出
+cache/
+shots/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+.pytest_cache/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 本地截图（F12 生成）
+screenshots/halo_*.png
+# 开发期临时脚本
+tools/_*.py
