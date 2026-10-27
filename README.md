@@ -150,7 +150,7 @@ $$
 3. 多普勒因子与相对论集束为
 
 $$
-D = \frac{1}{\gamma\,\bigl(1-\beta\,\hat{d}_{\mathrm{app}}\cdot\hat{u}\bigr)},\qquad
+D = \frac{1}{\gamma\,\left(1-\beta\,\hat{d}_{\mathrm{app}}\cdot\hat{u}\right)},\qquad
 \nu_{\mathrm{obs}} = D\,\nu_{\mathrm{emit}},\qquad
 I_{\mathrm{obs}} = D^3\,I_{\mathrm{emit}} .
 $$
@@ -172,7 +172,7 @@ $$
 平面按等比环带划分：
 
 $$
-r \in \bigl[R_0 Q^k,\; R_0 Q^{k+1}\bigr),\qquad
+r \in \left[R_0 Q^k,\; R_0 Q^{k+1}\right),\qquad
 R_0 = 0.22\ \mathrm{AU},\quad Q = 1.14,\quad k = 0,\dots,100 .
 $$
 
@@ -184,7 +184,7 @@ u = \frac{\theta}{2\pi}+\frac{1}{2},\qquad
 $$
 
 $$
-h = \mathrm{Hilbert}_{10}\!\bigl(\lfloor uS\rfloor,\ \lfloor \rho S\rfloor\bigr),
+h = \mathrm{Hilbert}_{10}\left(\lfloor uS\rfloor,\ \lfloor \rho S\rfloor\right),
 \qquad S = 2^{10},
 $$
 
