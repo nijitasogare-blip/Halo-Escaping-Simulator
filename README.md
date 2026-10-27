@@ -24,8 +24,6 @@ OpenGL visualization inspired by Liu Cixin's "Death's End" (Remembrance of Earth
 [物理与算法](#physics) · [截图](#screenshots) · [项目结构](#structure) · [性能与验证](#perf) ·
 [说明与限制](#notes) · [更新日志](#changelog) · [English](README.en.md)
 
-> 下文的数学公式使用 LaTeX（GitHub 原生 MathJax 渲染）。
-
 ---
 
 <a id="features"></a>
