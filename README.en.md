@@ -188,7 +188,7 @@ r \in \bigl[R_0 Q^k,\; R_0 Q^{k+1}\bigr),\qquad
 R_0 = 0.22\ \mathrm{AU},\quad Q = 1.14,\quad k = 0,\dots,100 .
 $$
 
-For a point $(x,z)$ on the plane, with $r = \sqrt{x^2+z^2}$ and $\theta = \operatorname{atan2}(z,x)$:
+For a point $(x,z)$ on the plane, with $r = \sqrt{x^2+z^2}$ and $\theta = \mathrm{atan2}(z,x)$:
 
 $$
 u = \frac{\theta}{2\pi}+\frac{1}{2},\qquad
@@ -196,16 +196,16 @@ u = \frac{\theta}{2\pi}+\frac{1}{2},\qquad
 $$
 
 $$
-h = \operatorname{Hilbert}_{10}\!\bigl(\lfloor uS\rfloor,\ \lfloor \rho S\rfloor\bigr),
+h = \mathrm{Hilbert}_{10}\!\bigl(\lfloor uS\rfloor,\ \lfloor \rho S\rfloor\bigr),
 \qquad S = 2^{10},
 $$
 
 $$
-\operatorname{reveal}(x,z) = \frac{r_k + (r_{k+1}-r_k)\,h/S^2}{R_{\mathrm{norm}}} .
+\mathrm{reveal}(x,z) = \frac{r_k + (r_{k+1}-r_k)\,h/S^2}{R_{\mathrm{norm}}} .
 $$
 
 The GLSL renderer and the Python side implement exactly the same function. A pixel with
-$\operatorname{reveal}(x,z) < p$ is considered already flattened, where $p$ is the current
+$\mathrm{reveal}(x,z) < p$ is considered already flattened, where $p$ is the current
 folding progress. $p$ lags the plane edge by about $0.62$ annulus widths, leaving a visible
 band that is currently being filled by the Hilbert curve; the front is the glowing fractal pen stroke.
 
@@ -251,7 +251,7 @@ minimap, ship labels and warnings (Chinese, with CJK font fallback on Linux/macO
   smoothly and $dr = \beta c\,dt$.
 - Planets orbit slowly (artistic licence: display radii are exaggerated ~100–500×,
   otherwise they would be sub-pixel).
-- A planet/ship is flattened when the $\operatorname{reveal}$ value at its projected plane
+- A planet/ship is flattened when the $\mathrm{reveal}$ value at its projected plane
   position is smaller than the current $p$: it is squashed, flashes and leaves a motion-aligned
   mark on the plane.
 - When the front catches Halo ($r_{\mathrm{ship}} \le R_{\mathrm{wave}}$), a full-screen

@@ -176,7 +176,7 @@ r \in \bigl[R_0 Q^k,\; R_0 Q^{k+1}\bigr),\qquad
 R_0 = 0.22\ \mathrm{AU},\quad Q = 1.14,\quad k = 0,\dots,100 .
 $$
 
-对平面上的点 $(x,z)$，令 $r = \sqrt{x^2+z^2}$、$\theta = \operatorname{atan2}(z,x)$：
+对平面上的点 $(x,z)$，令 $r = \sqrt{x^2+z^2}$、$\theta = \mathrm{atan2}(z,x)$：
 
 $$
 u = \frac{\theta}{2\pi}+\frac{1}{2},\qquad
@@ -184,15 +184,15 @@ u = \frac{\theta}{2\pi}+\frac{1}{2},\qquad
 $$
 
 $$
-h = \operatorname{Hilbert}_{10}\!\bigl(\lfloor uS\rfloor,\ \lfloor \rho S\rfloor\bigr),
+h = \mathrm{Hilbert}_{10}\!\bigl(\lfloor uS\rfloor,\ \lfloor \rho S\rfloor\bigr),
 \qquad S = 2^{10},
 $$
 
 $$
-\operatorname{reveal}(x,z) = \frac{r_k + (r_{k+1}-r_k)\,h/S^2}{R_{\mathrm{norm}}} .
+\mathrm{reveal}(x,z) = \frac{r_k + (r_{k+1}-r_k)\,h/S^2}{R_{\mathrm{norm}}} .
 $$
 
-渲染端（GLSL）与 Python 端实现同一函数，$\operatorname{reveal}(x,z) < p$ 的像素
+渲染端（GLSL）与 Python 端实现同一函数，$\mathrm{reveal}(x,z) < p$ 的像素
 视为“已折叠”，其中 $p$ 为当前折叠进度。$p$ 落后平面外缘约 $0.62$ 个环带宽度，
 因此二维化平面上始终留着一圈正在被希尔伯特曲线填充的活动区，前沿就是发光的分形折叠笔迹。
 
@@ -231,7 +231,7 @@ HUD 使用 pygame 字体渲染成 Surface 再上传纹理：相对论读数、�
 
 - 星环号沿固定逃逸方向径向飞行；$\beta$ 平滑趋近用户设定，$dr = \beta c\,dt$；
 - 行星做慢速公转（艺术处理：显示半径放大约 100–500 倍，否则在此尺度下不可见）；
-- 行星/飞船的二维化判据：其平面投影位置的 $\operatorname{reveal}$ 小于当前
+- 行星/飞船的二维化判据：其平面投影位置的 $\mathrm{reveal}$ 小于当前
   $p$ 时被吞噬 → 压扁动画、闪光、在平面上生成沿运动方向的拉长印记；
 - 波前追上星环号（$r_{\mathrm{ship}} \le R_{\mathrm{wave}}$）时触发全屏
   “二维化吞噬”特效，11 秒后自动重启；
